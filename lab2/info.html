@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Lucas Viana">
@@ -7,9 +8,47 @@
     <meta name="description" content="Website sobre ">
     <title>Info</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/cidade.ico"/>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          background-color: white;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;    
+        }
+    </style>
 </head>
 <body style="background-color: #A9A9A9;">
     <h3>Informações</h3>
-    
+    <p>Abaixo está presente informação demográfica e geográfica da cidade de 
+    Barcelona.</p>
+    <table style="width:100%">
+        <tr>
+            <th rowspan="2">Demografia</th>
+            <td>População</td>
+            <td>1 636 762 hab.</td>
+        </tr>
+        <tr>
+            <td>Densidade</td>
+            <td>16 141,6 hab./km²</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Geografia</th>
+            <td>Área total</td>
+            <td>101,4 km²</td>
+        </tr>
+        <tr>
+            <td>Continente</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>País</td>
+            <td>Espanha</td>
+        </tr>
+    </table>
+    <hr>
+    <a href="index.html">Voltar atrás.</a>
 </body>
 </html>
