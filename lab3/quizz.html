@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucas Viana">
+    <meta name="keywords" content="cidade, barcelona, espanha">
+    <meta name="description" content="Website sobre Barcelona">
+    <title>Quizz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/cidade.ico"/>
+</head>
+<body style="background-color: #A9A9A9;">
+    <h3>Quizz</h3>
+
+    <form action="../index.php">
+        <fieldset>
+            <legend><h5>Dados pessoais:</h5></legend>
+            <label for="fname"><b>Primeiro nome:</b></label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname"><b>Apelido:</b></label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email"><br><br>
+            <hr>
+            <label for="city"><b>Nome da cidade:</b></label>
+            <input type="text" id="fname" name="question1"><br><br>
+            <hr>
+            <label for="population"><b>Número de população:</b></label><br><br>
+            <input type="radio" id="radio1" name="question2" value="correct">
+            <label for="population"><b>1 636 762 hab.</b></label><br><br>
+            <input type="radio" id="radio2" name="question2" value="wrong">
+            <label for="population"><b>1 427 059 hab.</b></label><br><br>
+            <input type="radio" id="radio3" name="question2" value="wrong">
+            <label for="population"><b>1 104 927 hab.</b></label><br><br>
+            <hr>
+            <label for="exclusiveBuildings"><b>Monumentos/Edifícios da cidade:</b>
+            </label><br><br>
+            <input type="checkbox" id="check1" name="question3" value="correct">
+            <label for="exclusiveBuildings"><b>Casa Milá</b></label><br><br>
+            <input type="checkbox" id="check2" name="question3" value="correct">
+            <label for="exclusiveBuildings"><b>Basílica de la Sagrada Família</b></label><br><br>
+            <input type="checkbox" id="check3" name="question3" value="wrong">
+            <label for="exclusiveBuildings"><b>Torre Eiffel</b></label><br><br>
+            <input type="checkbox" id="check3" name="question3" value="wrong">
+            <label for="exclusiveBuildings"><b>Taj Mahal</b></label><br><br>
+            <hr>
+            <label for="building"><b>Data do início da construção de Basílica de 
+            la Sagrada Família</b></label>
+            <input type="date" id="birthday" name="question4"><br><br>
+            <hr>
+            <label for="lugarCidade"><b>Selecione a cidade de Barcelona:</b>
+            </label><br><br>
+            <input type="image" src="img/spainMap.jpg" id="image1"
+            name="question4" onclick="return false">
+            <hr>
+            <label for="colors"><b>Seleciona as cores principais do clube:</b></label>
+            <input type="color" id="color1" name="question5" value="#ff0000">
+            <input type="color" id="color2" name="question5" value="#ff0000"><br><br>
+            <hr>
+            <label for="monuments"><b>Quantos monumentos Gaudi existem na cidade:</b></label>
+            <input type="number" id="number1" name="question6"><br><br>
+            <hr>
+            <label for="evaluation"><b>Avalie Barcelona como uma cidade:</b></label>
+            <input type="range" id="number1" name="question7" min="0" max="100"><br><br>
+            <hr>
+            <input type="submit" value="Submit">
+        </fieldset>
+       </form>
+</body>
+</html>
