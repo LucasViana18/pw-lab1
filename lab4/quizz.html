@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucas Viana">
+    <meta name="keywords" content="cidade, barcelona, espanha">
+    <meta name="description" content="Website sobre Barcelona">
+    <title>Quizz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/cidade.ico"/>
+</head>
+<body style="background-color: #A9A9A9;">
+    <header>
+        <h1>Barcelona</h1>
+        <img src="img/barcelona.jpg" alt="Barcelona: City View" style="width: 300px;">
+        [<a href="https://www.vox.com/energy-and-environment/2019/4/8/18266760/barcelona-spain-urban-planning-history" target="_blank">Source</a>]
+    </header>
+
+    <hr>
+
+    <main>
+        <h3>Quizz</h3>
+        <section>
+            <form action="lucasvrviana@gmail.com" oninput="x.value=parseInt(range1.value)" method="POST">
+                <fieldset>
+                    <legend><h5>Dados pessoais:</h5></legend>
+                    <label for="fname"><b>Primeiro nome:</b></label>
+                    <input type="text" id="fname" name="fname" placeholder="Lucas" autofocus required><br><br>
+                    <label for="lname"><b>Apelido:</b></label>
+                    <input type="text" id="lname" name="lname" placeholder="Viana" required><br><br>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" autocomplete="on"><br><br>
+                    <hr>
+                    <label for="city"><b>Nome da cidade:</b></label>
+                    <input type="text" id="fname" name="question1" size="50" maxlength="50" required><br><br>
+                    <hr>
+                    <label for="population"><b>Número de população:</b></label><br><br>
+                    <input type="radio" id="radio1" name="question2" value="correct">
+                    <label for="population"><b>1 636 762 hab.</b></label><br><br>
+                    <input type="radio" id="radio2" name="question2" value="wrong">
+                    <label for="population"><b>1 427 059 hab.</b></label><br><br>
+                    <input type="radio" id="radio3" name="question2" value="wrong">
+                    <label for="population"><b>1 104 927 hab.</b></label><br><br>
+                    <hr>
+                    <label for="exclusiveBuildings"><b>Monumentos/Edifícios da cidade:</b>
+                    </label><br><br>
+                    <input type="checkbox" id="check1" name="question3" value="correct">
+                    <label for="exclusiveBuildings"><b>Casa Milá</b></label><br><br>
+                    <input type="checkbox" id="check2" name="question3" value="correct">
+                    <label for="exclusiveBuildings"><b>Basílica de la Sagrada Família</b></label><br><br>
+                    <input type="checkbox" id="check3" name="question3" value="wrong">
+                    <label for="exclusiveBuildings"><b>Torre Eiffel</b></label><br><br>
+                    <input type="checkbox" id="check3" name="question3" value="wrong">
+                    <label for="exclusiveBuildings"><b>Taj Mahal</b></label><br><br>
+                    <hr>
+                    <label for="building"><b>Data do início da construção de Basílica de 
+                    la Sagrada Família</b></label>
+                    <input type="date" id="building" name="question4"><br><br>
+                    <hr>
+                    <label for="lugarCidade"><b>Selecione a cidade de Barcelona:</b>
+                    </label><br><br>
+                    <input type="image" src="img/spainMap.jpg" id="image1"
+                    name="question4" onclick="return false" multiple>
+                    <hr>
+                    <label for="colors"><b>Seleciona as cores principais do clube:</b></label>
+                    <input type="color" id="color1" name="question5" value="#ff0000">
+                    <input type="color" id="color2" name="question5" value="#ff0000"><br><br>
+                    <hr>
+                    <label for="monuments"><b>Quantos monumentos Gaudi existem na cidade:</b></label>
+                    <input type="number" id="number1" name="question6" step="5"><br><br>
+                    <hr>
+                    <label for="evaluation"><b>Avalie Barcelona como uma cidade:</b></label>
+                    <input type="range" id="range1" name="question7" min="0" max="100">
+                    <output name="x" for="range1"></output><br><br>
+                    <hr>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <nav>
+        <h3>Menu</h3>
+        <svg width="500"; height="430">
+            <a href="quizz.html">
+                <rect x="110" y="35" width="275" height="45" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="220" y="65">
+                Quizz
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+
+            <a href="comentarios.html">
+                <rect x="110" y="90" width="275" height="45" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="185" y="120">
+                Comentários
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+
+            <a href="info.html">
+                <rect x="110" y="145" width="275" height="45" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="185" y="175">
+                Informações
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+    
+            <a href="local.html">
+                <rect x="110" y="200" width="275" height="40" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="190" y="228">
+                    Localização
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+    
+            <a href="index.html">
+                <rect x="110" y="250" width="275" height="40" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="192" y="278">
+                    Introdução
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+    
+            <a href="multimedia.html">
+                <rect x="110" y="300" width="275" height="40"fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="190" y="328">
+                    Multimédia
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+    
+            <a href="../index.html">
+                <rect x="178" y="350" width="142" height="40" fill="black"></rect>
+                <text fill="white" font-size="20" font-family="Verdana" x="216" y="378">
+                    Home
+                    <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="20;22;20"></animate>
+                    <animate attributeName="fill" begin="mouseover" dur="0.5s" 
+                    repeatCount="indefinite" values="red"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="fill" begin="mouseout" values="white"></animate>
+                </text>
+            </a>
+        </svg>
+    </nav>
+
+    <hr>
+
+    <footer>
+        Lucas Vinicius Reis Viana | 21805095 | Universidade Lusófona de Humanidades e Tecnologias | 3º ano Videojogos
+    </footer>
+</body>
+</html>
