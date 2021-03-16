@@ -7,11 +7,14 @@
     <meta name="description" content="Website sobre Barcelona">
     <title>Comentarios</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/cidade.ico"/>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #A9A9A9;">
+<body>
     <header>
         <h1>Barcelona</h1>
-        <img src="img/barcelona.jpg" alt="Barcelona: City View" style="width: 300px;">
+        <img src="img/barcelona.jpg" alt="Barcelona: City View" id="firstimage">
         [<a href="https://www.vox.com/energy-and-environment/2019/4/8/18266760/barcelona-spain-urban-planning-history" target="_blank">Source</a>]
     </header>
 
@@ -33,7 +36,7 @@
                     <label>4</label>
                     <input type="radio" name="clareza" id="clareza5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Rigor
                     <input type="radio" name="rigor" id="rigor1">
                     <label>1</label>
@@ -45,7 +48,7 @@
                     <label>4</label>
                     <input type="radio" name="rigor" id="rigor5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Precisão
                     <input type="radio" name="precisao" id="precisao1">
                     <label>1</label>
@@ -57,7 +60,7 @@
                     <label>4</label>
                     <input type="radio" name="precisao" id="precisao5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Profundidade
                     <input type="radio" name="profundidade" id="profundidade1">
                     <label>1</label>
@@ -69,7 +72,7 @@
                     <label>4</label>
                     <input type="radio" name="profundidade" id="profundidade5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Amplitude
                     <input type="radio" name="profundidade" id="profundidade1">
                     <label>1</label>
@@ -81,7 +84,7 @@
                     <label>4</label>
                     <input type="radio" name="profundidade" id="profundidade5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Lógica
                     <input type="radio" name="logica" id="logica1">
                     <label>1</label>
@@ -93,7 +96,7 @@
                     <label>4</label>
                     <input type="radio" name="logica" id="logica5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Significância
                     <input type="radio" name="significancia" id="significancia1">
                     <label>1</label>
@@ -105,7 +108,7 @@
                     <label>4</label>
                     <input type="radio" name="significancia" id="significancia5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Originalidade
                     <input type="radio" name="originalidade" id="originalidade1">
                     <label>1</label>
@@ -117,7 +120,7 @@
                     <label>4</label>
                     <input type="radio" name="originalidade" id="originalidade5">
                     <label>5</label>
-                    <br><hr>
+                    <hr>
                     Opinião sobre o trabalho realizado no laboratório 3, em poucas palavras:
                     <input type="text" id="opinion" size="50" maxlength="55">
                 </fieldset>
@@ -132,91 +135,91 @@
         <svg width="500"; height="430">
             <a href="quizz.html">
                 <rect x="110" y="35" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="220" y="65">
+                <text class="fontSettings" x="225" y="65">
                 Quizz
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
 
             <a href="comentarios.html">
                 <rect x="110" y="90" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="185" y="120">
+                <text class="fontSettings" x="200" y="120">
                 Comentários
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
 
             <a href="info.html">
                 <rect x="110" y="145" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="185" y="175">
+                <text class="fontSettings" x="200" y="175">
                 Informações
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="local.html">
                 <rect x="110" y="200" width="275" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="190" y="228">
+                <text class="fontSettings" x="200" y="228">
                     Localização
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="index.html">
                 <rect x="110" y="250" width="275" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="192" y="278">
+                <text class="fontSettings" x="200" y="278">
                     Introdução
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="multimedia.html">
                 <rect x="110" y="300" width="275" height="40"fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="190" y="328">
+                <text class="fontSettings" x="200" y="328">
                     Multimédia
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="../index.html">
                 <rect x="178" y="350" width="142" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="216" y="378">
+                <text class="fontSettings" x="221" y="378">
                     Home
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>

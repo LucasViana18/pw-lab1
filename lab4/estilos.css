@@ -1,0 +1,117 @@
+#firstimage{
+    width : 300px;
+}
+table{
+    width : 100%
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#correct{
+    background-color: green;
+    text-align: center;
+}
+
+#wrong{
+    background-color: red;
+    text-align: center;
+}
+
+body{
+    background-color: #A9A9A9;
+}
+
+.indexlist{
+    list-style-type : square;
+}
+
+iframe{
+    border-color: transparent;
+}
+
+iframe.googlemap{
+    width : 600px; 
+    height : 450px;
+}
+
+iframe.pointInterest{
+    height : 650px;
+    width : 100%;
+}
+
+iframe.gaudi{
+    height : 750px;
+    width : 750px;
+}
+
+iframe.video{
+    height : 560px;
+    width : 900px;
+}
+
+.svgMap{
+    height : 600px;
+    width : 600px;
+}
+
+.svgWord{
+    height : 500px;
+    width : 500px;
+}
+
+.invisiblePolygon{
+    fill-opacity: 0;
+}
+
+rect.word{
+    height : 40px;
+    width : 280px;
+    fill-opacity: 0;
+}
+
+rect.wordHome{
+    height : 40px;
+    width : 140px;
+    fill-opacity: 0;
+}
+
+.svgMenu{
+    height: 430px;
+    width: 500px;
+}
+
+.menuRect{
+    height: 45px;
+    width: 275px;
+}
+
+.menuRectHome{
+    height: 45px;
+    width: 142px;
+}
+
+text.fontSettings{
+    fill : white;
+    font-size: 22px;
+}
+
+*{
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+tr.rowOdd > td{
+    background-color: rgb(164, 164, 197);
+}
+
+tr.rowEven > td{
+    background-color: rgb(104, 104, 119);
+}

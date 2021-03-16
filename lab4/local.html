@@ -7,11 +7,14 @@
     <meta name="description" content="Website sobre Barcelona">
     <title>Info</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/cidade.ico"/>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #A9A9A9;">
+<body>
     <header>
         <h1>Barcelona</h1>
-        <img src="img/barcelona.jpg" alt="Barcelona: City View" style="width: 300px;">
+        <img src="img/barcelona.jpg" alt="Barcelona: City View" id="firstimage">
         [<a href="https://www.vox.com/energy-and-environment/2019/4/8/18266760/barcelona-spain-urban-planning-history" target="_blank">Source</a>]
     </header>
 
@@ -22,21 +25,20 @@
             <p>Barcelona é uma cidade situada na Europa, Espanha. Mais específicamente a nordeste do país.</p>
             <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77941.79342064717!2d2.15515157068225!3d41.394630267191204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Spain!5e1!3m2!1sen!2spt!4v1614769044037!5m2!1sen!2spt" 
-            width="600" height="450" style="border:0;" allowfullscreen="" 
-            loading="lazy"></iframe>
+            class="googlemap" allowfullscreen="" loading="lazy"></iframe>
         </section>
         <hr>
         <section>
-            <svg width="600" height="600">
-                <image href="img/Barcelona_Edited.svg" alt="Barcelona SVG" width="600" height="600"></image>
+            <svg class="svgMap">
+                <image href="img/Barcelona_Edited.svg" alt="Barcelona SVG" class="svgMap"></image>
                 <a href="https://www.barcelonacheckin.com/img/stored_images/barcelona/area/7_guide.png" target="mapFrame">
-                    <polygon points="405,390 520,390 520,500 380,500" fill-opacity="0"/>
+                    <polygon points="405,390 520,390 520,500 380,500" class="invisiblePolygon"/>
                 </a>
                 <a href="https://ajuntament.barcelona.cat/horta-guinardo/sites/default/files/el_guinardo_hospitalstpau.jpg" target="mapFrame">
-                    <polygon points="405,365 310,200 480,200" fill-opacity="0"/>
+                    <polygon points="405,365 310,200 480,200" class="invisiblePolygon"/>
                 </a>
                 <a href="https://i2.wp.com/www.hisour.com/wp-content/uploads/2020/12/Sants-Montjuic-district-Barcelona-city-Spain.jpg?w=960&ssl=1" target="mapFrame">
-                    <polygon points="10,430 230,380 290,500 70,570" fill-opacity="0"/>
+                    <polygon points="10,430 230,380 290,500 70,570" class="invisiblePolygon"/>
                 </a>
             </svg>
             <br>
@@ -46,7 +48,7 @@
             [<a href="https://ajuntament.barcelona.cat/" target="_blank">Blue</a>]
             <br><br>
             <legend>Ponto de interesse do distrito selecionado:</legend>
-            <iframe name="mapFrame" height="650" width="100%" frameborder="0"></iframe>
+            <iframe name="mapFrame" class="pointInterest"></iframe>
         </section>
     </main>
 
@@ -57,91 +59,91 @@
         <svg width="500"; height="430">
             <a href="quizz.html">
                 <rect x="110" y="35" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="220" y="65">
+                <text class="fontSettings" x="225" y="65">
                 Quizz
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
 
             <a href="comentarios.html">
                 <rect x="110" y="90" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="185" y="120">
+                <text class="fontSettings" x="200" y="120">
                 Comentários
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
 
             <a href="info.html">
                 <rect x="110" y="145" width="275" height="45" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="185" y="175">
+                <text class="fontSettings" x="200" y="175">
                 Informações
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="local.html">
                 <rect x="110" y="200" width="275" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="190" y="228">
+                <text class="fontSettings" x="200" y="228">
                     Localização
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="index.html">
                 <rect x="110" y="250" width="275" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="192" y="278">
+                <text class="fontSettings" x="200" y="278">
                     Introdução
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="multimedia.html">
                 <rect x="110" y="300" width="275" height="40"fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="190" y="328">
+                <text class="fontSettings" x="200" y="328">
                     Multimédia
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
     
             <a href="../index.html">
                 <rect x="178" y="350" width="142" height="40" fill="black"></rect>
-                <text fill="white" font-size="20" font-family="Verdana" x="216" y="378">
+                <text class="fontSettings" x="221" y="378">
                     Home
                     <animate attributeName="font-size" begin="mouseover" dur="0.5s" 
-                    repeatCount="indefinite" values="20;22;20"></animate>
+                    repeatCount="indefinite" values="25;27;25"></animate>
                     <animate attributeName="fill" begin="mouseover" dur="0.5s" 
                     repeatCount="indefinite" values="red"></animate>
-                    <animate attributeName="font-size" begin="mouseout" values="20"></animate>
+                    <animate attributeName="font-size" begin="mouseout" values="22"></animate>
                     <animate attributeName="fill" begin="mouseout" values="white"></animate>
                 </text>
             </a>
