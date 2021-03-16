@@ -16,12 +16,12 @@ th, td {
     text-align: left;
 }
 
-#correct{
+.correct{
     background-color: green;
     text-align: center;
 }
 
-#wrong{
+.wrong{
     background-color: red;
     text-align: center;
 }
@@ -108,10 +108,10 @@ text.fontSettings{
     font-family: 'Akaya Telivigala', cursive;
 }
 
-tr.rowOdd > td{
+tr > td{
     background-color: rgb(164, 164, 197);
 }
 
-tr.rowEven > td{
+tr > td{
     background-color: rgb(104, 104, 119);
 }
